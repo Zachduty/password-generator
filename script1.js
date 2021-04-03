@@ -22,7 +22,7 @@ var allChoices = "";
   
 function generatePassword() {  
 
-  var allChoices = "";
+//   var allChoices = "";
   var password = "";
   
   var length = prompt("Enter a character amount between 8-128");
@@ -32,32 +32,32 @@ function generatePassword() {
   }
 
     
-    var lowerCase = confirm("Would you like to include lowercase letters?");
-    var upperCase = confirm("Would you like to include uppercase letters?");
-    var num = confirm("Would you like to include numbers?");
-    var special = confirm("Would you like to include special characters?");
+    var lowerCasechar = confirm("Would you like to include lowercase letters?");
+    var upperCaseChar = confirm("Would you like to include uppercase letters?");
+    var numbs = confirm("Would you like to include numbers?");
+    var specialChar = confirm("Would you like to include special characters?");
   
 if(lowerCase || upperCase || num || special){
   if (lowerCase){
   allChoices += lowerCase
-  console.log(allChoices);
+//   console.log(allChoices);
 }
 if(upperCase){
   allChoices += upperCase
-  console.log(allChoices);
+//   console.log(allChoices);
 }
 if(num){
   allChoices += num //number//
-  console.log(allChoices);
+//   console.log(allChoices);
 }
-if(specialcon){
+if(special){
   allChoices += special
-  console.log(allChoices);
+//   console.log(allChoices);
 }
 
-var length = allChoices.length;
+var lengthOfPass = allChoices.length;
    for ( var i = 0; i < length; i++ ) {
-      password += allChoices.charAt(Math.floor(Math.random() * length));
+      password += allChoices.charAt(Math.floor(Math.random() * lengthOfPass));
    }
    return password;
   }else{
